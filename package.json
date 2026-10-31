@@ -1,0 +1,32 @@
+{
+  "name": "paven-traders",
+  "version": "1.0.0",
+  "description": "Paven Traders - Production-oriented single-store online grocery delivery platform",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "server",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:server": "npm --workspace=server run dev",
+    "dev:customer": "npm --workspace=customer-web run dev",
+    "dev:admin": "npm --workspace=admin-web run dev",
+    "dev:mobile": "npm --workspace=mobile start",
+    "build:server": "npm --workspace=server run build",
+    "build:customer": "npm --workspace=customer-web run build",
+    "build:admin": "npm --workspace=admin-web run build",
+    "test:server": "npm --workspace=server test",
+    "seed:admin": "npm --workspace=server run seed:admin"
+  },
+  "keywords": [
+    "grocery-delivery",
+    "mern",
+    "react",
+    "react-native",
+    "express",
+    "mongodb"
+  ],
+  "author": "Paven Traders",
+  "license": "ISC"
+}
